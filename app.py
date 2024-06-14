@@ -16,7 +16,10 @@ app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
 
 db = SQLAlchemy(app)
 
-class Feedvack()
+class Review(db.Model):
+    __tablename__ = 'review'
+
+
 @app.route('/')
 def index():
     return render_template('index.html')
